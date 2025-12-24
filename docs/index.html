@@ -84,14 +84,14 @@
             background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(124, 58, 237, 0.1) 50%, rgba(236, 72, 153, 0.1) 100%);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(0, 212, 255, 0.2);
-            padding: 60px 40px;
+            padding: 80px 40px;
             margin-bottom: 60px;
             position: relative;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 40px;
+            min-height: 300px;
         }
         
         .header-content {
@@ -100,6 +100,8 @@
             justify-content: center;
             gap: 40px;
             flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
         }
         
         .header-text {
@@ -118,30 +120,31 @@
             bottom: 0;
             background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 50%, var(--pink) 100%);
             opacity: 0.05;
-            z-index: -1;
+            z-index: 0;
+        }
+        
+        .logo-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background-image: url('logo-interactive.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.15;
+            z-index: 1;
+            pointer-events: none;
         }
         
         .logo-container {
             position: relative;
-            display: inline-block;
+            display: none;
             cursor: pointer;
             transition: transform 0.3s ease;
             flex-shrink: 0;
-        }
-        
-        .logo-container:hover {
-            transform: scale(1.1) rotate(5deg);
-        }
-        
-        .logo-container svg {
-            width: 140px;
-            height: 140px;
-            filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.5));
-            transition: filter 0.3s ease;
-        }
-        
-        .logo-container:hover svg {
-            filter: drop-shadow(0 0 40px rgba(0, 212, 255, 0.8)) drop-shadow(0 0 60px rgba(124, 58, 237, 0.6));
         }
         
         @keyframes pulse {
@@ -440,8 +443,8 @@
         /* Responsive design */
         @media (max-width: 768px) {
             header {
-                padding: 40px 20px;
-                flex-direction: column;
+                padding: 60px 20px;
+                min-height: 250px;
             }
             
             .header-content {
@@ -452,11 +455,6 @@
             .header-text {
                 align-items: center;
                 text-align: center;
-            }
-            
-            .logo-container svg {
-                width: 120px;
-                height: 120px;
             }
             
             header h1 {
@@ -484,10 +482,8 @@
 </head>
 <body>
     <header>
+        <div class="logo-background"></div>
         <div class="header-content">
-            <div class="logo-container" id="logoContainer">
-                <object data="logo-interactive.svg" type="image/svg+xml" id="interactiveLogo"></object>
-            </div>
             <div class="header-text">
                 <h1>AI-ETHICA</h1>
                 <p>A Framework for Ethical AI Evaluation and Practices</p>
