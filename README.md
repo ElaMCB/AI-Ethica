@@ -1,14 +1,22 @@
 <div align="center">
 
-![AI-Ethica Logo](https://raw.githubusercontent.com/ElaMCB/AI-Ethica/main/docs/logo.svg)
+<div style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 20px 0;">
 
-# AI-Ethica
+<div>
+<img src="https://raw.githubusercontent.com/ElaMCB/AI-Ethica/main/docs/logo.svg" alt="AI-Ethica Logo" width="140" height="140">
+</div>
 
-**A Comprehensive Framework for Ethical AI Evaluation and Practices**
-
+<div style="text-align: left;">
+<h1 style="margin: 0 0 10px 0; font-family: 'Orbitron', 'Exo 2', 'Rajdhani', sans-serif; letter-spacing: 3px; text-transform: uppercase;">AI-ETHICA</h1>
+<p style="margin: 0 0 15px 0; font-size: 1.1em; color: #666;">A Comprehensive Framework for Ethical AI Evaluation and Practices</p>
+<div>
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-green.svg)](https://elamcb.github.io/AI-Ethica/)
+</div>
+</div>
+
+</div>
 
 </div>
 
