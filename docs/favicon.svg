@@ -1,32 +1,64 @@
 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <!-- Futuristic gradient -->
     <linearGradient id="favGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
     </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="favGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   
-  <!-- Background -->
-  <rect width="64" height="64" rx="12" fill="url(#favGrad1)"/>
+  <!-- Dark background -->
+  <rect width="64" height="64" rx="10" fill="#0a0e27"/>
   
-  <!-- Shield shape -->
-  <path d="M 32 10 L 45 16 L 45 29 Q 45 42 38 48 Q 32 54 26 48 Q 19 42 19 29 L 19 16 Z" 
-        fill="white" opacity="0.95"/>
-  
-  <!-- Scales -->
+  <!-- Hexagonal frame -->
   <g transform="translate(32, 32)">
-    <!-- Base -->
-    <line x1="-9" y1="6" x2="9" y2="6" stroke="#667eea" stroke-width="1.5" stroke-linecap="round"/>
-    <!-- Left scale -->
-    <ellipse cx="-6" cy="3" rx="4" ry="2.5" fill="none" stroke="#667eea" stroke-width="1.2"/>
-    <line x1="-6" y1="0.5" x2="-6" y2="6" stroke="#667eea" stroke-width="1.2"/>
-    <!-- Right scale -->
-    <ellipse cx="6" cy="3" rx="4" ry="2.5" fill="none" stroke="#667eea" stroke-width="1.2"/>
-    <line x1="6" y1="0.5" x2="6" y2="6" stroke="#667eea" stroke-width="1.2"/>
-    <!-- Center support -->
-    <line x1="0" y1="-8" x2="0" y2="6" stroke="#667eea" stroke-width="1.5" stroke-linecap="round"/>
-    <!-- Top -->
-    <circle cx="0" cy="-8" r="1.5" fill="#667eea"/>
+    <!-- Outer hex -->
+    <polygon points="-16,-9 16,-9 22,0 16,9 -16,9 -22,0" 
+             fill="none" 
+             stroke="url(#favGrad1)" 
+             stroke-width="1.5" 
+             opacity="0.7"
+             filter="url(#favGlow)"/>
+    
+    <!-- Inner hex -->
+    <polygon points="-11,-6 11,-6 14,0 11,6 -11,6 -14,0" 
+             fill="none" 
+             stroke="url(#favGrad1)" 
+             stroke-width="1" 
+             opacity="0.5"/>
+    
+    <!-- Central node -->
+    <circle cx="0" cy="0" r="3" fill="url(#favGrad1)" filter="url(#favGlow)"/>
+    
+    <!-- Connected nodes -->
+    <circle cx="-8" cy="-5" r="1.5" fill="#00d4ff" filter="url(#favGlow)"/>
+    <circle cx="8" cy="-5" r="1.5" fill="#7c3aed" filter="url(#favGlow)"/>
+    <circle cx="-8" cy="5" r="1.5" fill="#ec4899" filter="url(#favGlow)"/>
+    <circle cx="8" cy="5" r="1.5" fill="#00d4ff" filter="url(#favGlow)"/>
+    
+    <!-- Connection lines -->
+    <line x1="0" y1="0" x2="-8" y2="-5" stroke="url(#favGrad1)" stroke-width="0.8" opacity="0.6"/>
+    <line x1="0" y1="0" x2="8" y2="-5" stroke="url(#favGrad1)" stroke-width="0.8" opacity="0.6"/>
+    <line x1="0" y1="0" x2="-8" y2="5" stroke="url(#favGrad1)" stroke-width="0.8" opacity="0.6"/>
+    <line x1="0" y1="0" x2="8" y2="5" stroke="url(#favGrad1)" stroke-width="0.8" opacity="0.6"/>
+    
+    <!-- Balance scales (simplified) -->
+    <g transform="translate(0, 2)">
+      <rect x="-5" y="3" width="10" height="1" fill="url(#favGrad1)" opacity="0.8" rx="0.5"/>
+      <rect x="-6" y="1" width="4" height="0.8" fill="url(#favGrad1)" opacity="0.9" rx="0.4"/>
+      <rect x="2" y="1" width="4" height="0.8" fill="url(#favGrad1)" opacity="0.9" rx="0.4"/>
+      <line x1="0" y1="-2" x2="0" y2="3" stroke="url(#favGrad1)" stroke-width="1" opacity="0.7"/>
+      <circle cx="0" cy="-2" r="1" fill="url(#favGrad1)"/>
+    </g>
   </g>
 </svg>
-
