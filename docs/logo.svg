@@ -103,11 +103,12 @@
   
   <!-- Text with futuristic styling -->
   <text x="100" y="180" 
-        font-family="'Segoe UI', Arial, sans-serif" 
-        font-size="20" 
-        font-weight="bold" 
+        font-family="'Orbitron', 'Exo 2', 'Rajdhani', 'Arial', sans-serif" 
+        font-size="18" 
+        font-weight="700" 
         fill="url(#futGrad1)"
         text-anchor="middle"
         filter="url(#glow)"
-        letter-spacing="2">AI-ETHICA</text>
+        letter-spacing="3"
+        text-transform="uppercase">AI-ETHICA</text>
 </svg>
