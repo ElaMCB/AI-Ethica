@@ -1,0 +1,32 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="url(#favGrad1)"/>
+  
+  <!-- Shield shape -->
+  <path d="M 32 10 L 45 16 L 45 29 Q 45 42 38 48 Q 32 54 26 48 Q 19 42 19 29 L 19 16 Z" 
+        fill="white" opacity="0.95"/>
+  
+  <!-- Scales -->
+  <g transform="translate(32, 32)">
+    <!-- Base -->
+    <line x1="-9" y1="6" x2="9" y2="6" stroke="#667eea" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Left scale -->
+    <ellipse cx="-6" cy="3" rx="4" ry="2.5" fill="none" stroke="#667eea" stroke-width="1.2"/>
+    <line x1="-6" y1="0.5" x2="-6" y2="6" stroke="#667eea" stroke-width="1.2"/>
+    <!-- Right scale -->
+    <ellipse cx="6" cy="3" rx="4" ry="2.5" fill="none" stroke="#667eea" stroke-width="1.2"/>
+    <line x1="6" y1="0.5" x2="6" y2="6" stroke="#667eea" stroke-width="1.2"/>
+    <!-- Center support -->
+    <line x1="0" y1="-8" x2="0" y2="6" stroke="#667eea" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Top -->
+    <circle cx="0" cy="-8" r="1.5" fill="#667eea"/>
+  </g>
+</svg>
+

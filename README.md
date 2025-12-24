@@ -1,4 +1,18 @@
+<div align="center">
+
+![AI-Ethica Logo](docs/logo.svg)
+
 # AI-Ethica
+
+**A Comprehensive Framework for Ethical AI Evaluation and Practices**
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-green.svg)](https://elamcb.github.io/AI-Ethica/)
+
+</div>
+
+---
 
 A comprehensive framework and toolkit for evaluating and ensuring ethical AI practices. AI-Ethica provides tools, metrics, and guidelines for assessing fairness, bias, transparency, accountability, and privacy in artificial intelligence systems.
 
