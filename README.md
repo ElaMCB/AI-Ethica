@@ -1,6 +1,6 @@
 <div align="center">
 
-![AI-Ethica Logo](docs/logo.svg)
+![AI-Ethica Logo](https://raw.githubusercontent.com/ElaMCB/AI-Ethica/main/docs/logo.svg)
 
 # AI-Ethica
 
