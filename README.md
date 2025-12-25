@@ -144,20 +144,11 @@ AI-Ethica/
 
 ## Roadmap
 
-**v0.2** (Q2 2025)
-- Differential privacy module with ε-δ guarantees
-- Enhanced fairness metrics (individual fairness, counterfactual fairness)
-- Integration with popular ML frameworks (TensorFlow, PyTorch)
-
-**v0.3** (Q3 2025)
-- Audit PDF export functionality
-- Real-time bias monitoring dashboard
-- API for production deployments
-
-**Future**
-- Multi-language support
-- Regulatory compliance templates (GDPR, CCPA)
-- Community-contributed fairness definitions
+| Version | Timeline | Features |
+|---------|----------|----------|
+| **v0.2** | Q4 2025 | Differential privacy module (ε-δ guarantees), Enhanced fairness metrics (individual & counterfactual), ML framework integration (TensorFlow, PyTorch) |
+| **v0.3** | Q1 2026 | Audit PDF export, Real-time bias monitoring dashboard, Production API |
+| **Future** | TBD | Multi-language support, Regulatory compliance templates (GDPR, CCPA), Community-contributed fairness definitions |
 
 *Have a feature request? [Open an issue](https://github.com/ElaMCB/AI-Ethica/issues) and let's discuss priorities!*
 
