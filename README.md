@@ -17,7 +17,7 @@
 <img src="https://img.shields.io/badge/version-0.1.0-orange.svg" alt="Version">
 <img src="https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg" alt="CI">
 <img src="https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica" alt="Last Commit">
-<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FElaMCB%2FAI-Ethica&label=Visitors&countColor=%237C3AED" alt="Visitors">
+<img src="https://komarev.com/ghpvc/?username=ElaMCB&repo=AI-Ethica&color=7c3aed&label=Visitors" alt="Visitors">
 </p>
 </td>
 </tr>
