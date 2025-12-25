@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-ethica"
+version = "0.1.0"
+description = "A framework for evaluating and ensuring ethical AI practices"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "AI-Ethica Contributors"}
+]
+keywords = ["ai", "ethics", "fairness", "bias", "transparency", "privacy", "accountability"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "scikit-learn>=1.0.0",
+    "matplotlib>=3.4.0",
+    "seaborn>=0.11.0",
+    "shap>=0.40.0",
+    "fairlearn>=0.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ElaMCB/AI-Ethica"
+Documentation = "https://elamcb.github.io/AI-Ethica/"
+Repository = "https://github.com/ElaMCB/AI-Ethica"
+Issues = "https://github.com/ElaMCB/AI-Ethica/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ai_ethica*"]
+

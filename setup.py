@@ -11,7 +11,7 @@ setup(
     description="A comprehensive framework for evaluating and ensuring ethical AI practices",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/AI-Ethica",
+    url="https://github.com/ElaMCB/AI-Ethica",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
