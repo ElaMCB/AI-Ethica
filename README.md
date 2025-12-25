@@ -6,12 +6,12 @@
 
 **A Framework for Ethical AI Evaluation and Practices**
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Python](https://img.shields.io/pypi/pyversions/ai-ethica)](https://www.python.org/)
-[![PyPI](https://img.shields.io/pypi/v/ai-ethica.svg)](https://pypi.org/project/ai-ethica/)
-[![CI](https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg)](https://github.com/ElaMCB/AI-Ethica/actions)
-[![Last Commit](https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica)](https://github.com/ElaMCB/AI-Ethica)
-[![Visitors](https://visitor-badge.glitch.me/badge?page_id=ElaMCB.AI-Ethica)](https://github.com/ElaMCB/AI-Ethica)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+![Python](https://img.shields.io/pypi/pyversions/ai-ethica)
+![PyPI](https://img.shields.io/pypi/v/ai-ethica.svg)
+![CI](https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg)
+![Last Commit](https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica)
+![Visitors](https://visitor-badge.glitch.me/badge?page_id=ElaMCB.AI-Ethica)
 
 **[🌐 View Live Site](https://elamcb.github.io/AI-Ethica/)** • **[📓 Try in Colab](https://colab.research.google.com/github/ElaMCB/AI-Ethica/blob/main/examples/quickstart.ipynb)** • **[📚 API Docs](https://github.com/ElaMCB/AI-Ethica/tree/main/ai_ethica)** • **[💻 Source Code](https://github.com/ElaMCB/AI-Ethica)**
 
