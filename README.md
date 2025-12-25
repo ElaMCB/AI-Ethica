@@ -1,14 +1,27 @@
 <div align="center">
 
+<table>
+<tr>
+<td width="140" align="center">
 <img src="https://raw.githubusercontent.com/ElaMCB/AI-Ethica/main/docs/logo.svg" alt="AI-Ethica Logo" width="120" height="120">
-
-# AI-ETHICA
-
-**A Framework for Ethical AI Evaluation and Practices**
-
-![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg) ![Python](https://img.shields.io/pypi/pyversions/ai-ethica) ![PyPI](https://img.shields.io/pypi/v/ai-ethica.svg) ![CI](https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg) ![Last Commit](https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica) ![Visitors](https://visitor-badge.glitch.me/badge?page_id=ElaMCB.AI-Ethica)
-
-**[🌐 View Live Site](https://elamcb.github.io/AI-Ethica/)** • **[📓 Try in Colab](https://colab.research.google.com/github/ElaMCB/AI-Ethica/blob/main/examples/quickstart.ipynb)** • **[📚 API Docs](https://github.com/ElaMCB/AI-Ethica/tree/main/ai_ethica)** • **[💻 Source Code](https://github.com/ElaMCB/AI-Ethica)**
+</td>
+<td>
+<h1 style="margin: 0; font-family: 'Orbitron', 'Exo 2', 'Rajdhani', 'Arial', sans-serif; letter-spacing: 4px; text-transform: uppercase; font-size: 2.5em;">AI-ETHICA</h1>
+<p style="margin: 10px 0 15px 0;"><strong>A Framework for Ethical AI Evaluation and Practices</strong></p>
+<p style="margin: 10px 0 15px 0;">
+<a href="https://elamcb.github.io/AI-Ethica/" style="font-size: 1.1em; color: #00d4ff; text-decoration: none; font-weight: 600;">🌐 View Live Site</a>
+</p>
+<p style="margin: 15px 0 0 0;">
+<img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License">
+<img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python">
+<img src="https://img.shields.io/badge/version-0.1.0-orange.svg" alt="Version">
+<img src="https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg" alt="CI">
+<img src="https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica" alt="Last Commit">
+<img src="https://visitor-badge.glitch.me/badge?page_id=ElaMCB.AI-Ethica" alt="Visitors">
+</p>
+</td>
+</tr>
+</table>
 
 </div>
 
