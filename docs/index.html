@@ -72,6 +72,150 @@
             50% { transform: translate(-100px, 100px) scale(1.1); }
         }
         
+        /* Navigation Bar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+            padding: 15px 40px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--cyan), var(--purple));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--cyan);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 60px;
+        }
+        
+        .hero h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 50%, var(--pink) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.3;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .cta-primary {
+            padding: 16px 32px;
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+        }
+        
+        .cta-secondary {
+            padding: 16px 32px;
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--cyan);
+            text-decoration: none;
+            border: 2px solid var(--cyan);
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            background: rgba(0, 212, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+        }
+        
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .trust-badges img {
+            height: 20px;
+        }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -299,8 +443,8 @@
         }
         
         code {
-            background: rgba(0, 212, 255, 0.1);
-            color: var(--cyan);
+            background: #f6f8fa;
+            color: #24292f;
             padding: 3px 8px;
             border-radius: 5px;
             font-family: 'Courier New', monospace;
@@ -555,6 +699,16 @@
     </style>
 </head>
 <body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="#" class="nav-logo">AI-ETHICA</a>
+        <div class="nav-links">
+            <a href="#api" class="nav-link">API Docs</a>
+            <a href="https://github.com/ElaMCB/AI-Ethica/tree/main/examples" class="nav-link">Examples</a>
+            <a href="https://colab.research.google.com/github/ElaMCB/AI-Ethica/blob/main/examples/quickstart.ipynb" class="nav-link">Colab Demo</a>
+            <a href="https://github.com/ElaMCB/AI-Ethica" class="nav-link">GitHub</a>
+        </div>
+    </nav>
+    
     <header>
         <div class="logo-background"></div>
         <div class="header-content">
@@ -566,7 +720,26 @@
     </header>
     
     <div class="container">
-        <section class="section">
+        <!-- Trust Badges -->
+        <div class="trust-badges">
+            <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0 License">
+            <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python 3.8+">
+            <img src="https://img.shields.io/badge/pypi-v0.1.0-blue.svg" alt="PyPI Version">
+            <img src="https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg" alt="CI Status">
+            <img src="https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica" alt="Last Commit">
+        </div>
+        
+        <!-- Hero Section -->
+        <div class="hero">
+            <h2>Build AI that is fair, transparent & accountable in 5 lines of code.</h2>
+            <p>AI-Ethica provides production-ready tools for evaluating fairness, detecting bias, ensuring transparency, and maintaining accountability in your AI systems.</p>
+            <div class="hero-cta">
+                <a href="https://colab.research.google.com/github/ElaMCB/AI-Ethica/blob/main/examples/quickstart.ipynb" class="cta-primary">Try the 2-min Tutorial</a>
+                <a href="https://github.com/ElaMCB/AI-Ethica" class="cta-secondary">View on GitHub</a>
+            </div>
+        </div>
+        
+        <section class="section" id="about">
             <h2>About</h2>
             <p>AI-Ethica provides tools, metrics, and guidelines for assessing fairness, bias, transparency, accountability, and privacy in artificial intelligence systems. Our framework helps developers and researchers build more ethical and responsible AI systems.</p>
             
@@ -578,38 +751,38 @@
             <h2>Features</h2>
             <div class="features">
                 <div class="feature-card">
-                    <h3>🔍 Bias Detection</h3>
+                    <h3><span role="img" aria-label="Magnifying glass">🔍</span> Bias Detection</h3>
                     <p>Identify and measure bias in datasets and models. Detect representation bias, label bias, and measurement bias across protected attributes.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <h3>⚖️ Fairness Metrics</h3>
+                    <h3><span role="img" aria-label="Scales of justice">⚖️</span> Fairness Metrics</h3>
                     <p>Calculate various fairness metrics including demographic parity, equalized odds, equal opportunity, and calibration across protected groups.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <h3>🔎 Transparency Analysis</h3>
+                    <h3><span role="img" aria-label="Search icon">🔎</span> Transparency Analysis</h3>
                     <p>Assess model interpretability, explainability, and transparency. Evaluate feature importance and documentation completeness.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <h3>🔒 Privacy Evaluation</h3>
+                    <h3><span role="img" aria-label="Lock">🔒</span> Privacy Evaluation</h3>
                     <p>Evaluate data privacy and security measures. Assess re-identification risk, data minimization, and privacy protection mechanisms.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <h3>📋 Accountability Tracking</h3>
+                    <h3><span role="img" aria-label="Clipboard">📋</span> Accountability Tracking</h3>
                     <p>Track model decisions and maintain audit trails. Log incidents and generate accountability reports for compliance and review.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <h3>📚 Comprehensive Documentation</h3>
+                    <h3><span role="img" aria-label="Books">📚</span> Comprehensive Documentation</h3>
                     <p>Well-documented API with examples, best practices, and guidelines for ethical AI development.</p>
                 </div>
             </div>
         </section>
         
-        <section class="section">
+        <section class="section" id="quickstart">
             <h2>Quick Start</h2>
             
             <h3>Installation</h3>
@@ -638,8 +811,11 @@ analyzer = TransparencyAnalyzer()
 transparency_score = analyzer.assess(model)</code></pre>
         </section>
         
-        <section class="section">
-            <h2>Core Modules</h2>
+        <section class="section" id="api">
+            <h2>API Reference</h2>
+            <p>View the complete <a href="https://github.com/ElaMCB/AI-Ethica/tree/main/ai_ethica">source code</a> or explore the <a href="https://github.com/ElaMCB/AI-Ethica/tree/main/examples">examples</a>.</p>
+            
+            <h3>Core Modules</h3>
             
             <h3>Bias Detection</h3>
             <p>The <code>BiasDetector</code> class helps identify statistical disparities, representation bias, and label bias in your datasets and models.</p>
