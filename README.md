@@ -12,12 +12,12 @@
 <a href="https://elamcb.github.io/AI-Ethica/" style="font-size: 1.1em; color: #00d4ff; text-decoration: none; font-weight: 600;">🌐 View Live Site</a>
 </p>
 <p style="margin: 15px 0 0 0;">
-<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0 License"></a>
-<a href="https://pypi.org/project/ai-ethica/"><img src="https://img.shields.io/pypi/pyversions/ai-ethica" alt="Python Versions"></a>
-<a href="https://pypi.org/project/ai-ethica/"><img src="https://img.shields.io/pypi/v/ai-ethica.svg" alt="PyPI Version"></a>
-<a href="https://github.com/ElaMCB/AI-Ethica/actions"><img src="https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg" alt="CI Status"></a>
-<a href="https://github.com/ElaMCB/AI-Ethica"><img src="https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica" alt="Last Commit"></a>
-<a href="https://github.com/ElaMCB/AI-Ethica"><img src="https://visitor-badge.glitch.me/badge?page_id=ElaMCB.AI-Ethica" alt="Visitors"></a>
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python](https://img.shields.io/pypi/pyversions/ai-ethica)](https://www.python.org/)
+[![PyPI](https://img.shields.io/pypi/v/ai-ethica.svg)](https://pypi.org/project/ai-ethica/)
+[![CI](https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg)](https://github.com/ElaMCB/AI-Ethica/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica)](https://github.com/ElaMCB/AI-Ethica)
+[![Visitors](https://visitor-badge.glitch.me/badge?page_id=ElaMCB.AI-Ethica)](https://github.com/ElaMCB/AI-Ethica)
 </p>
 </td>
 </tr>
