@@ -13,11 +13,11 @@
 </p>
 <p style="margin: 15px 0 0 0;">
 <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0 License"></a>
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python 3.8+"></a>
+<a href="https://pypi.org/project/ai-ethica/"><img src="https://img.shields.io/pypi/pyversions/ai-ethica" alt="Python Versions"></a>
 <a href="https://pypi.org/project/ai-ethica/"><img src="https://img.shields.io/pypi/v/ai-ethica.svg" alt="PyPI Version"></a>
 <a href="https://github.com/ElaMCB/AI-Ethica/actions"><img src="https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg" alt="CI Status"></a>
 <a href="https://github.com/ElaMCB/AI-Ethica"><img src="https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica" alt="Last Commit"></a>
-<a href="https://github.com/ElaMCB/AI-Ethica"><img src="https://visitor-badge.laobi.icu/badge?page_id=ElaMCB.AI-Ethica&left_color=7c3aed&right_color=00d4ff" alt="Visitors"></a>
+<a href="https://github.com/ElaMCB/AI-Ethica"><img src="https://visitor-badge.glitch.me/badge?page_id=ElaMCB.AI-Ethica" alt="Visitors"></a>
 </p>
 </td>
 </tr>
@@ -44,14 +44,16 @@ A framework and toolkit for evaluating and ensuring ethical AI practices. AI-Eth
 
 ## Installation
 
-```bash
-# Stable release (once published to PyPI)
-pip install ai-ethica
+*Note: `ai-ethica` will be on PyPI soon; for now use the development install below.*
 
-# Or for development/contributors
+```bash
+# Development install (recommended until PyPI release)
 git clone https://github.com/ElaMCB/AI-Ethica.git
 cd AI-Ethica
 pip install -e .
+
+# Once published to PyPI:
+# pip install ai-ethica
 ```
 
 ## Quick Start
@@ -76,6 +78,23 @@ fairness_scores = metrics.evaluate(model, test_data, protected_attributes)
 # Assess model transparency
 analyzer = TransparencyAnalyzer()
 transparency_score = analyzer.assess(model)
+```
+
+**Example output:**
+```json
+{
+  "bias_metrics": {
+    "gender": {
+      "representation_bias": {
+        "disparity_ratio": 2.33,
+        "is_balanced": false
+      }
+    }
+  },
+  "recommendations": [
+    "High representation disparity detected in 'gender'. Consider data collection strategies to improve balance."
+  ]
+}
 ```
 
 ## API Reference
@@ -107,6 +126,10 @@ transparency_score = analyzer.assess(model)
 
 📖 [Full API Documentation](https://elamcb.github.io/AI-Ethica/api) (coming soon)
 
+## Ethics & Governance
+
+We follow the [IEEE 7000-2021](https://standards.ieee.org/standard/7000-2021.html) model-process for ethical system design. See [docs/ETHICS.md](https://github.com/ElaMCB/AI-Ethica/blob/main/docs/ETHICS.md) for our ethical framework and governance principles.
+
 ## Project Structure
 
 ```
@@ -124,10 +147,29 @@ AI-Ethica/
 └── docs/               # Documentation
 ```
 
+## Roadmap
+
+**v0.2** (Q2 2025)
+- Differential privacy module with ε-δ guarantees
+- Enhanced fairness metrics (individual fairness, counterfactual fairness)
+- Integration with popular ML frameworks (TensorFlow, PyTorch)
+
+**v0.3** (Q3 2025)
+- Audit PDF export functionality
+- Real-time bias monitoring dashboard
+- API for production deployments
+
+**Future**
+- Multi-language support
+- Regulatory compliance templates (GDPR, CCPA)
+- Community-contributed fairness definitions
+
+*Have a feature request? [Open an issue](https://github.com/ElaMCB/AI-Ethica/issues) and let's discuss priorities!*
+
 ## Contributing
 
-Contributions are welcome! Please read our contributing guidelines and code of conduct.
+Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTING.md) and [ethics framework](docs/ETHICS.md).
 
 ## License
 
-Apache License 2.0 - see LICENSE file for details.
+Apache License 2.0 - see [LICENSE](LICENSE) file for details.
