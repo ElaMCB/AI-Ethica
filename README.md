@@ -1,35 +1,22 @@
 <div align="center">
 
-<table>
-<tr>
-<td width="140" align="center">
 <img src="https://raw.githubusercontent.com/ElaMCB/AI-Ethica/main/docs/logo.svg" alt="AI-Ethica Logo" width="120" height="120">
-</td>
-<td>
-<h1 style="margin: 0; font-family: 'Orbitron', 'Exo 2', 'Rajdhani', 'Arial', sans-serif; letter-spacing: 4px; text-transform: uppercase; font-size: 2.5em;">AI-ETHICA</h1>
-<p style="margin: 10px 0 15px 0;"><strong>A Framework for Ethical AI Evaluation and Practices</strong></p>
-<p style="margin: 10px 0 15px 0;">
-<a href="https://elamcb.github.io/AI-Ethica/" style="font-size: 1.1em; color: #00d4ff; text-decoration: none; font-weight: 600;">🌐 View Live Site</a>
-</p>
-<p style="margin: 15px 0 0 0;">
+
+# AI-ETHICA
+
+**A Framework for Ethical AI Evaluation and Practices**
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/pypi/pyversions/ai-ethica)](https://www.python.org/)
 [![PyPI](https://img.shields.io/pypi/v/ai-ethica.svg)](https://pypi.org/project/ai-ethica/)
 [![CI](https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg)](https://github.com/ElaMCB/AI-Ethica/actions)
 [![Last Commit](https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica)](https://github.com/ElaMCB/AI-Ethica)
 [![Visitors](https://visitor-badge.glitch.me/badge?page_id=ElaMCB.AI-Ethica)](https://github.com/ElaMCB/AI-Ethica)
-</p>
-</td>
-</tr>
-</table>
+
+**[🌐 View Live Site](https://elamcb.github.io/AI-Ethica/)** • **[📓 Try in Colab](https://colab.research.google.com/github/ElaMCB/AI-Ethica/blob/main/examples/quickstart.ipynb)** • **[📚 API Docs](https://github.com/ElaMCB/AI-Ethica/tree/main/ai_ethica)** • **[💻 Source Code](https://github.com/ElaMCB/AI-Ethica)**
 
 </div>
 
----
-
-**[🌐 View Live Documentation Site](https://elamcb.github.io/AI-Ethica/)** | **[📓 Try in Colab](https://colab.research.google.com/github/ElaMCB/AI-Ethica/blob/main/examples/quickstart.ipynb)** | **[📚 API Docs](https://github.com/ElaMCB/AI-Ethica/tree/main/ai_ethica)** | **[💻 Source Code](https://github.com/ElaMCB/AI-Ethica)**
-
----
 
 A framework and toolkit for evaluating and ensuring ethical AI practices. AI-Ethica provides tools, metrics, and guidelines for assessing fairness, bias, transparency, accountability, and privacy in artificial intelligence systems.
 
