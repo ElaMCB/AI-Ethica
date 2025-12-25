@@ -14,8 +14,7 @@
 <p style="margin: 15px 0 0 0;">
 <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License">
 <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python">
-<img src="https://img.shields.io/pypi/v/ai-ethica.svg" alt="PyPI Version">
-<img src="https://img.shields.io/pypi/dm/ai-ethica" alt="Downloads/month">
+<img src="https://img.shields.io/badge/version-0.1.0-orange.svg" alt="Version">
 <img src="https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg" alt="CI">
 <img src="https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica" alt="Last Commit">
 <img src="https://komarev.com/ghpvc/?username=ElaMCB&repo=AI-Ethica&color=7c3aed&label=Visitors" alt="Visitors">
