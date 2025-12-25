@@ -14,7 +14,8 @@
 <p style="margin: 15px 0 0 0;">
 <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License">
 <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python">
-<img src="https://img.shields.io/badge/version-0.1.0-orange.svg" alt="Version">
+<img src="https://img.shields.io/pypi/v/ai-ethica.svg" alt="PyPI Version">
+<img src="https://img.shields.io/pypi/dm/ai-ethica" alt="Downloads/month">
 <img src="https://github.com/ElaMCB/AI-Ethica/workflows/CI/badge.svg" alt="CI">
 <img src="https://img.shields.io/github/last-commit/ElaMCB/AI-Ethica" alt="Last Commit">
 <img src="https://komarev.com/ghpvc/?username=ElaMCB&repo=AI-Ethica&color=7c3aed&label=Visitors" alt="Visitors">
@@ -39,16 +40,14 @@ A framework and toolkit for evaluating and ensuring ethical AI practices. AI-Eth
 
 ## Installation
 
-*Note: `ai-ethica` will be on PyPI soon; for now use the development install below.*
-
 ```bash
-# Development install (recommended until PyPI release)
+# Stable release from PyPI
+pip install ai-ethica
+
+# Development install (for contributors)
 git clone https://github.com/ElaMCB/AI-Ethica.git
 cd AI-Ethica
 pip install -e .
-
-# Once published to PyPI:
-# pip install ai-ethica
 ```
 
 ## Quick Start
@@ -143,6 +142,8 @@ AI-Ethica/
 ```
 
 ## Roadmap
+
+See our [GitHub Milestones](https://github.com/ElaMCB/AI-Ethica/milestones) for detailed progress tracking.
 
 | Version | Timeline | Features |
 |---------|----------|----------|
