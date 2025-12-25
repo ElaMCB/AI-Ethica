@@ -12,7 +12,7 @@
 <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python"></a>
 <a href="https://elamcb.github.io/AI-Ethica/"><img src="https://img.shields.io/badge/docs-GitHub%20Pages-green.svg" alt="GitHub Pages"></a>
-<a href="https://github.com/ElaMCB/AI-Ethica"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2FElaMCB%2FAI-Ethica&label=Visitors&query=value&color=7c3aed" alt="Visitors"></a>
+<a href="https://github.com/ElaMCB/AI-Ethica"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FElaMCB%2FAI-Ethica&count_bg=%237C3AED&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false" alt="Visitors"></a>
 </p>
 </td>
 </tr>
