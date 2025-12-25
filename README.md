@@ -8,11 +8,12 @@
 <td>
 <h1 style="margin: 0; font-family: 'Orbitron', 'Exo 2', 'Rajdhani', 'Arial', sans-serif; letter-spacing: 4px; text-transform: uppercase; font-size: 2.5em;">AI-ETHICA</h1>
 <p style="margin: 10px 0 15px 0;"><strong>A Framework for Ethical AI Evaluation and Practices</strong></p>
-<div>
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-green.svg)](https://elamcb.github.io/AI-Ethica/)
-</div>
+<p style="margin: 15px 0 0 0;">
+<a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python"></a>
+<a href="https://elamcb.github.io/AI-Ethica/"><img src="https://img.shields.io/badge/docs-GitHub%20Pages-green.svg" alt="GitHub Pages"></a>
+<a href="https://github.com/ElaMCB/AI-Ethica"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2FElaMCB%2FAI-Ethica&label=Visitors&query=value&color=7c3aed" alt="Visitors"></a>
+</p>
 </td>
 </tr>
 </table>
